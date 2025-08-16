@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisas Avançadas</title>
+    <style>
+        .div_titulo
+        {
+            background-color:#f5f5f5;
+            text-align: center;
+            color:#666666;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:18px;
+            height:47px;
+          
+        }
+        .lupa{
+            font-size: 30px;
+            color:white;
+            background-color: #4d90fe;
+            cursor: pointer;
+        }
+        .div.padrao {
+             font-size: 13px;
+             font-family:Arial, Helvetica, sans-serif;
+             color:#2222;
+              position: relative;
+             height: 500vh;
+             background-color: green;
+            }
+        .barra_1
+        {
+            position:absolute;
+            top: 80%;
+              transform: translate(-50%, -50%);
+        }   
+        .barra_de_pesquisa 
+        {
+          position: absolute;
+          width: 50%;
+          left: 40%;
+            border: 2px solid #ccc;
+        }
+        .negrito{
+            font-weight: bold;
+        }
+        .div_topo_direita {
+    width: 200px;
+    position: absolute;
+    top: 3%;
+    left: 89%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+
+    </style>
+</head>
+<body>
+     <div class="div.padrao">
+         
+         
+            <form action="https://www.google.com/search">
+            <div class="div_titulo"> Pesquisa avançada <label for="busca"><span class="lupa">&#128269;</span></label> </div>
+            <div> <span class="negrito">Encontrar artigo</span></div>
+            <div>com <strong>todas</strong> estas palavras  <input class="barra_de_pesquisa" type="text" name="as_q"></div>
+            <br>
+            <div>com <strong>esta palavra ou frase exata</strong> <input class="barra_de_pesquisa" type="text" name="as_epq=">  </div>
+            <br>
+            <div>qualquer uma <strong>destas palavras</strong> <input class="barra_de_pesquisa" type="text" name="as_oq"></div>
+            <br>
+            <div> nenhuma <strong>destas palavras</strong> <input class="barra_de_pesquisa" type="text" name="eq"></div>
+          </form>
+
+
+
+           <div class="div_topo_direita"> <a href="index.html">Voltar a pagina inicial</a></div>  
+         
+            
+
+            
+    </div>
+               
+
+</body>
+</html>
